@@ -1,6 +1,7 @@
 #input 2 numbers
-first_number = input("Input first number: ")
-second_number = input("Input second number: ")
+first_number = int(input("Input first number: "))
+second_number = int(input("Input second number: "))
+
 #check if first number is bigger
 if first_number > second_number:
     #print first number if true
