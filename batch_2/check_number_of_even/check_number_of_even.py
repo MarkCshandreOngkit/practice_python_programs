@@ -12,5 +12,7 @@ for i in range(10):
     #check if number is even
     if number % 2 == 0 and number != 0:
         #add 1 to even counter if true
-        pass
+        even_counter += 1
+
 #print even counter
+print(even_counter)
