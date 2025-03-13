@@ -1,9 +1,9 @@
 #generate 0-100
-iteration = 0
+number = 0
 
-while iteration != 101:
-    print(iteration)
-    iteration += 1
-
-#check if number is odd
-    #print number if true
+while number != 101:
+    #check if number is odd
+    if number % 2 == 1:
+        #print number if true
+        print(number)
+    number += 1
