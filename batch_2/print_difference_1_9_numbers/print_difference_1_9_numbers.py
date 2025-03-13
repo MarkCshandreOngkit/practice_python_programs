@@ -5,7 +5,11 @@ def ask():
 
 #call function 10 times
 for i in range(10):
-    ask()
     #differentiate first number
+    if i == 0:
+        first_number = ask()
+        print("First Number")
+    else:
+        ask()
     #subtract each numbers to first number each call
 #print difference
