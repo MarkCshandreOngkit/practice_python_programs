@@ -10,5 +10,7 @@ even_counter = 0
 for i in range(10):
     number = ask()
     #check if number is even
+    if number % 2 == 0 and number != 0:
         #add 1 to even counter if true
+        pass
 #print even counter
