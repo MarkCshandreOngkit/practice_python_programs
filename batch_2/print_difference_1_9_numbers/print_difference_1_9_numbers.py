@@ -4,6 +4,8 @@ def ask():
     return number
 
 #call function 10 times
+for i in range(10):
+    ask()
     #differentiate first number
     #subtract each numbers to first number each call
 #print difference
