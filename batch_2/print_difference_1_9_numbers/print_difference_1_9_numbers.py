@@ -10,6 +10,8 @@ for i in range(10):
         first_number = ask()
         print("First Number")
     else:
-        ask()
+        number = ask()
     #subtract each numbers to first number each call
+    first_number -= number
+    
 #print difference
