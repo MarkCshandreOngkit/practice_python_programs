@@ -6,7 +6,6 @@ def ask():
 #create function checks if input is digit/number
 def check_digit(number):
     if number.isdigit():
-        int(number)
         return True
     else:
         return False
@@ -24,13 +23,25 @@ while True:
     check_input = check_digit(number)
     if check_input == False:
         break
+    int(number)
     
     #check if the number is not in unique and duplicate
+    if number not in unique_numbers and number not in duplicate:
         #put the number in unique if true
+        unique_numbers.append(number)
+
     #remove if there's a duplicate and put in duplicate list
+    else:
+        #put the number in duplicate
+        duplicate.append(number)
         #check if number in unique list
+        if number in unique_numbers:
             #removes number from unique if true
-            #put the number in duplicate
+            unique_numbers.remove(number)
+        
+
+print(unique_numbers)
+print(duplicate)
 #iterate through each unique
     #print unique number and "Unique"
 #iterate through each duplicate
