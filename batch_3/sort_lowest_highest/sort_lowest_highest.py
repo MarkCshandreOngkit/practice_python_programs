@@ -24,6 +24,8 @@ while True:
         break
     int(number)
     #put the input in list
-    
+    numbers.append(number)
 #sort list
+numbers.sort()
 #print list
+print(numbers)
