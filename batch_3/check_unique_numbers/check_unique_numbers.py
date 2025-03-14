@@ -39,11 +39,11 @@ while True:
             #removes number from unique if true
             unique_numbers.remove(number)
         
-
-print(unique_numbers)
-print(duplicate)
 #iterate through each unique
+for unique_number in unique_numbers:
     #print unique number and "Unique"
+    print(f'{unique_number}, "Unique"')
 #iterate through each duplicate
+for duplicate_number in duplicate:
     #print duplicate number and "Duplicate"
-            
+    print(f'{duplicate_number}, "Duplicate"')            
