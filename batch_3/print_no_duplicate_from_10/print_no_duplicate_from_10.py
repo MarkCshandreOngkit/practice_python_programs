@@ -11,7 +11,7 @@ duplicate = []
 for i in range(10):
     number = ask()
     #check if the number is not in the list
-    if number not in unique_numbers and duplicate:
+    if number not in unique_numbers and number not in duplicate:
         #put the number in list if true
         unique_numbers.append(number)
 
