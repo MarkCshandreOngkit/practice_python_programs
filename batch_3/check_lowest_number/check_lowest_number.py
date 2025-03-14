@@ -25,6 +25,10 @@ while True:
     int(number)
 
     #put the input in list
+    numbers.append(number)
+
 #sort list
+numbers.sort()
 #print first number in list
+print(numbers[0])
 
