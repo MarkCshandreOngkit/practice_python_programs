@@ -25,7 +25,10 @@ while True:
     int(number)
     #put input in numbers
     numbers.append(number)
-    
+
 #sort numbers
+numbers.sort()
 #reverse numbers
+numbers.reverse()
 #print numbers
+print(numbers)
