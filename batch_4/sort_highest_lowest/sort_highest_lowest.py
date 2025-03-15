@@ -22,7 +22,7 @@ while True:
     check_input = check_digit(number)
     if check_input == False:
         break
-    int(number)
+    number = int(number)
     #put input in numbers
     numbers.append(number)
 
