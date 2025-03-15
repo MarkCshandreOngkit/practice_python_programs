@@ -11,21 +11,24 @@ def check_digit(number):
         return False
     
 #initialize
-numbers = []
 iteration = 0
+sum = 0
 
 #call function until invalid input(int is not inputted)
 while True:
     iteration += 1
     number = ask()
-    #check if input is invalid, if true break loop
+    #check if input is invalid, if true, iteration minus 1 and break loop
     check_input = check_digit(number)
     if check_input == False:
+        iteration -= 1
         break
-    int(number)
-    #put input in numbers
-    numbers.append(number)
-    
-#iterate through each number
+    number = int(number) #oh...
     #add number to sum
-#sum divided by (iteration minus 1) - because of invalid input iteration
+    sum += number
+
+#sum divided by iteration 
+average = sum / iteration
+
+#print average
+print(average)
