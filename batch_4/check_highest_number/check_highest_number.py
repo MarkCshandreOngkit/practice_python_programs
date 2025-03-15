@@ -28,6 +28,10 @@ while True:
     numbers.append(number)
 
 #iterate through each number
+for number in numbers:
     #check if number is greater than highest number
+    if number > highest_number:
         #save number as highest number
+        highest_number = number
 #print highest number
+print(highest_number)
