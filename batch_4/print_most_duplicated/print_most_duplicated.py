@@ -13,6 +13,8 @@ def check_digit(number):
 #initialize
 numbers = []
 iteration = 0
+highest_count = 0
+most_duplicate = 0
 
 #call function until invalid input(int is not inputted)
 while True:
@@ -25,11 +27,18 @@ while True:
     int(number)
     #put input in numbers
     numbers.append(number)
-    
+
 #iterate through each number
+for number in numbers:
     #count the times the number appeared in the list
+    count = numbers.count(number)
     #check if the current count is higher than the previous count
+    if count > highest_count:
         #save the number as most duplicate
+        highest_count = count
+        most_duplicate = number
+
 #print most duplicate
+print(most_duplicate)
 
 
